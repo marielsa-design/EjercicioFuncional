@@ -20,23 +20,21 @@
 # Retornar un mensaje con el resultado.
 
 # El programa principal debe:
+ 
+# Mostrar el resultado
 
-# Pedir al usuario que ingrese un número.
-
-# Llamar a la función analizar_numero.
-
-# Mostrar el resultado con primer
-
-def analizar_numero():
-    
-    numero = int(input("Ingresar un numero: "))
+def analizar_numero(): 
+    numero = int(input("Ingresar un numero: ")) # Pedir al usuario que ingrese un número.
     if numero < 0:
         print(f"Negativo") 
-
+        return
+    
     if numero > 0:
         print(f"Positvo")
-
+        return
+    
     if numero == 0:
         print(f"Cero")
+        return
 
-analizar_numero()
+analizar_numero() # Llamar a la función analizar_numero.

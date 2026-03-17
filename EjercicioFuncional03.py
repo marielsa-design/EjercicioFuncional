@@ -18,10 +18,18 @@
 # El programa principal debe:
 
 # Pedir el nombre del empleado
+
+nombre = input("Ingrese tu nombre del empleado: ")
+
 # Pedir horas trabajadas
+
+horas = float(input("Ingrese las horas trabajadas: "))
+
 # Pedir valor por hora
+
+valor_hora = float(input("Ingrese el valor por hora: "))
+
 # Llamar a la función
-# Mostrar el salario final.
 
 def calcular_salario(horas, valor_hora):
     if horas <= 40:
@@ -31,13 +39,9 @@ def calcular_salario(horas, valor_hora):
         horas_extras = horas - 40
         salario = (horas_normales * valor_hora) + (horas_extras * valor_hora * 2)
         return salario
-    
-nombre = input("Ingrese tu nombre del empleado: ")
-
-horas = float(input("Ingrese las horas trabajadas: "))
-
-valor_hora = float(input("Ingrese el valor por hora: "))
 
 salario_total = calcular_salario(horas, valor_hora)
+
+# Mostrar el salario final.
 
 print(f"{nombre}, su salario totales es: ${salario_total}")
