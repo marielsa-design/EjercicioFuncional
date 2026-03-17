@@ -21,9 +21,9 @@ def puede_votar(edad):
     else:
         return "No puede votar"
 
-nombre = input ("Ingrese su nombre: ")
-edad = int(input("Ingrese su edad: "))
+nombre = input ("Ingrese su nombre: ") #a
+edad = int(input("Ingrese su edad: ")) #b
 
-resultado = puede_votar(edad)
+resultado = puede_votar(edad) #c
 
-print(f"{nombre}, {resultado}")
+print(f"{nombre}, {resultado}") #d
