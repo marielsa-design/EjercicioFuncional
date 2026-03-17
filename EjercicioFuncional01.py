@@ -27,9 +27,6 @@
 
 # Mostrar el resultado con primer
 
-
-
-
 def analizar_numero():
     
     numero = int(input("Ingresar un numero: "))
